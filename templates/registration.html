@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Welcom to A20 Book Store
+{% endblock %}
+{% block body %}
+<form action="{{url_for('index')}}" method="post">
+    <div class="login">
+    <div class="login-screen">
+    <div class="app-title">
+    <input type="text" name="user_id" placeholder="Enter User_id"> <br/>
+    <br/>
+    <input type="text" name="email" placeholder="Enter Your Email"><br/>
+    <br/>
+    <input type="text" name="DOB" placeholder="Enter Your DOB"><br/>
+    <br/>
+    <input type="text" name="Nationlaity" placeholder="Enter Your Nationality"><br/>
+    <br/>
+    <input type="submit" value="Submit" class="btn btn-primary btn-large btn-block">
+    </div>
+    </div>
+    </div>
+</form>
+{% endblock %}
